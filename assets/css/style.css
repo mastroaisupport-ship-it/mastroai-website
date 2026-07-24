@@ -263,3 +263,315 @@ transition:.25s;
 background:var(--surface);
 
 }
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    min-height:92vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+
+    height:900px;
+
+    right:-250px;
+
+    top:-200px;
+
+    background:radial-gradient(circle,
+        rgba(245,166,35,.18),
+        transparent 70%);
+
+    z-index:0;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:90px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-text{
+
+    animation:fadeUp .9s ease;
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#FFC65A;
+
+    margin-bottom:30px;
+
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    margin-bottom:28px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:620px;
+
+    margin-bottom:40px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    width:370px;
+
+    border-radius:42px;
+
+    box-shadow:
+
+        0 50px 100px rgba(0,0,0,.55),
+
+        0 0 80px rgba(245,166,35,.18);
+
+    transition:.45s ease;
+
+    animation:floatPhone 6s ease-in-out infinite;
+
+}
+
+.hero-image img:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+}
+
+/* ==========================================================
+   FEATURES
+========================================================== */
+
+#features{
+
+    padding:120px 0;
+
+}
+
+.cards{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:24px;
+
+    padding:36px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:var(--surface2);
+
+}
+
+.emoji{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@keyframes floatPhone{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:1000px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+nav ul{
+
+display:none;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-image img{
+
+width:290px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+}
+
+
