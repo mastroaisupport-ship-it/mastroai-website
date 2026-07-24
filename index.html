@@ -131,6 +131,109 @@ display:none;
 }
 
 }
+
+    /* ===========================
+PHONE GLOW
+=========================== */
+
+.phone-glow{
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,
+rgba(245,166,35,.28),
+transparent 70%);
+
+filter:blur(35px);
+
+z-index:-1;
+
+animation:pulseGlow 5s infinite;
+
+}
+    @keyframes pulseGlow{
+
+0%{
+
+transform:scale(.9);
+
+opacity:.5;
+
+}
+
+50%{
+
+transform:scale(1.1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(.9);
+
+opacity:.5;
+
+}
+
+}
+    .hero-image{
+
+position:relative;
+
+}
+
+.floating-card{
+
+position:absolute;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+padding:14px 18px;
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:15px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+animation:floatCard 5s ease-in-out infinite;
+
+}
+   @keyframes floatCard{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -213,7 +316,17 @@ Scarica l'app
         </div>
 
         <div class="hero-image">
+<div class="floating-card" style="top:40px;left:-40px;">
 
+🤖 AI Assistant
+
+</div>
+
+<div class="floating-card" style="bottom:60px;right:-30px;">
+
+📄 Preventivo creato
+
+</div>
             <div class="phone-glow"></div>
 
             <img
