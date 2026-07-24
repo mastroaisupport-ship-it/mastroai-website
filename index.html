@@ -8,307 +8,94 @@
     <title>MastroAI | L'assistente AI per artigiani e professionisti</title>
 
     <meta name="description"
-        content="Trasforma foto e richieste in preventivi, appuntamenti e clienti organizzati con MastroAI.">
+        content="Trasforma una foto in un preventivo grazie all'Intelligenza Artificiale. MastroAI aiuta artigiani e professionisti a gestire clienti, appuntamenti e preventivi in un'unica app.">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-/* =====================================================
-WORKFLOW
-=====================================================*/
+    <meta name="theme-color" content="#081120">
 
-.workflow{
-
-padding:140px 0;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:80px;
-
-}
-
-.section-label{
-
-display:inline-block;
-
-padding:8px 18px;
-
-border-radius:999px;
-
-background:rgba(245,166,35,.12);
-
-color:#F5A623;
-
-font-weight:700;
-
-margin-bottom:25px;
-
-}
-
-.workflow-grid{
-
-display:grid;
-
-grid-template-columns:1fr auto 1fr auto 1fr;
-
-gap:25px;
-
-align-items:center;
-
-}
-
-.workflow-card{
-
-background:var(--surface);
-
-border:1px solid rgba(255,255,255,.05);
-
-padding:45px;
-
-border-radius:26px;
-
-transition:.35s;
-
-}
-
-.workflow-card:hover{
-
-transform:translateY(-12px);
-
-background:var(--surface2);
-
-}
-
-.workflow-arrow{
-
-font-size:52px;
-
-font-weight:700;
-
-color:#F5A623;
-
-}
-
-.step{
-
-width:70px;
-
-height:70px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-border-radius:50%;
-
-background:#F5A623;
-
-color:#081120;
-
-font-size:30px;
-
-font-weight:800;
-
-margin-bottom:30px;
-
-}
-    @media(max-width:1100px){
-
-.workflow-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.workflow-arrow{
-
-display:none;
-
-}
-
-}
-
-    /* ===========================
-PHONE GLOW
-=========================== */
-
-.phone-glow{
-
-position:absolute;
-
-width:420px;
-
-height:420px;
-
-border-radius:50%;
-
-background:radial-gradient(circle,
-rgba(245,166,35,.28),
-transparent 70%);
-
-filter:blur(35px);
-
-z-index:-1;
-
-animation:pulseGlow 5s infinite;
-
-}
-    @keyframes pulseGlow{
-
-0%{
-
-transform:scale(.9);
-
-opacity:.5;
-
-}
-
-50%{
-
-transform:scale(1.1);
-
-opacity:1;
-
-}
-
-100%{
-
-transform:scale(.9);
-
-opacity:.5;
-
-}
-
-}
-    .hero-image{
-
-position:relative;
-
-}
-
-.floating-card{
-
-position:absolute;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(12px);
-
-padding:14px 18px;
-
-border-radius:18px;
-
-border:1px solid rgba(255,255,255,.08);
-
-font-size:15px;
-
-box-shadow:0 20px 40px rgba(0,0,0,.25);
-
-animation:floatCard 5s ease-in-out infinite;
-
-}
-   @keyframes floatCard{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-12px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
-
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-<div class="container">
+    <div class="container">
 
-<nav>
+        <nav class="navbar">
 
-<a class="logo" href="#">
+            <a href="#" class="logo">
 
-Mastro<span>AI</span>
+                Mastro<span>AI</span>
 
-</a>
+            </a>
 
-<ul>
+            <ul class="menu">
 
-<li><a href="#features">Funzionalità</a></li>
+                <li><a href="#workflow">Come funziona</a></li>
+                <li><a href="#features">Funzionalità</a></li>
+                <li><a href="#screens">L'app</a></li>
+                <li><a href="#faq">FAQ</a></li>
 
-<li><a href="#ai">AI</a></li>
+            </ul>
 
-<li><a href="#pricing">Perché MastroAI</a></li>
+            <a href="#" class="btn btn-primary">
 
-<li><a href="support.html">Supporto</a></li>
+                Scarica l'App
 
-</ul>
+            </a>
 
-<a class="download-btn" href="#">
+        </nav>
 
-Scarica l'app
-
-</a>
-
-</nav>
-
-</div>
+    </div>
 
 </header>
 
-<section class="hero">
+<!-- HERO -->
+
 <section class="hero">
 
     <div class="container hero-grid">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
             <span class="badge">
+
                 ✨ AI per Artigiani e Professionisti
+
             </span>
 
             <h1>
-                Trasforma una foto<br>
+
+                Trasforma una foto
                 in un preventivo.
+
             </h1>
 
             <p>
+
                 Preventivi, clienti, appuntamenti e assistente AI.
-                Tutto in un'unica app.
+                Tutto in un'unica applicazione.
+
             </p>
 
-            <div class="buttons">
+            <div class="hero-buttons">
 
                 <a href="#" class="btn btn-primary">
+
                     Scarica su App Store
+
                 </a>
 
-                <a href="#workflow" class="btn btn-secondary">
+                <a href="#workflow" class="btn btn-outline">
+
                     Scopri come funziona
+
                 </a>
 
             </div>
@@ -316,18 +103,20 @@ Scarica l'app
         </div>
 
         <div class="hero-image">
-<div class="floating-card" style="top:40px;left:-40px;">
 
-🤖 AI Assistant
-
-</div>
-
-<div class="floating-card" style="bottom:60px;right:-30px;">
-
-📄 Preventivo creato
-
-</div>
             <div class="phone-glow"></div>
+
+            <div class="floating-card card-left">
+
+                🤖 AI Assistant
+
+            </div>
+
+            <div class="floating-card card-right">
+
+                📄 Preventivo creato
+
+            </div>
 
             <img
                 src="assets/images/estimate.png"
@@ -338,75 +127,16 @@ Scarica l'app
     </div>
 
 </section>
-<div class="container hero-grid">
 
-<div class="hero-text">
+<!-- WORKFLOW -->
 
-<div class="badge">
-
-✨ Disponibile su App Store
-
-</div>
-
-<h1>
-
-L'AI che trasforma
-una foto
-in un preventivo.
-
-</h1>
-
-<p>
-
-MastroAI è l'assistente intelligente progettato
-per artigiani e professionisti.
-
-Organizza clienti,
-agenda,
-preventivi
-e attività quotidiane
-in un'unica applicazione.
-
-</p>
-
-<div class="buttons">
-
-<a href="#" class="primary">
-
-Scarica ora
-
-</a>
-
-<a href="#features" class="secondary">
-
-Scopri di più
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img
-src="assets/images/estimate.png"
-alt="Preventivo AI">
-
-</div>
-
-</div>
-
-</section>
-
-<section id="features">
-<section class="workflow">
+<section id="workflow" class="workflow">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-header">
 
-            <span class="section-label">
+            <span class="section-badge">
 
                 COME FUNZIONA
 
@@ -414,15 +144,13 @@ alt="Preventivo AI">
 
             <h2>
 
-                Da una semplice foto
-                ad un preventivo completo.
+                Bastano tre semplici passaggi.
 
             </h2>
 
             <p>
 
-                Nessun software complicato.
-                Bastano pochi secondi.
+                Da una foto al preventivo in pochi secondi.
 
             </p>
 
@@ -440,24 +168,19 @@ alt="Preventivo AI">
 
                 <h3>
 
-                    Scatta una foto
+                    Scatta
 
                 </h3>
 
                 <p>
 
-                    Fotografa il lavoro da eseguire
-                    oppure descrivilo con la voce.
+                    Fotografa il lavoro.
 
                 </p>
 
             </div>
 
-            <div class="workflow-arrow">
-
-                →
-
-            </div>
+            <div class="workflow-line"></div>
 
             <div class="workflow-card">
 
@@ -469,26 +192,19 @@ alt="Preventivo AI">
 
                 <h3>
 
-                    L'AI analizza
+                    Analizza
 
                 </h3>
 
                 <p>
 
-                    Materiali,
-                    manodopera
-                    e lavorazioni
-                    vengono riconosciuti automaticamente.
+                    L'AI genera il preventivo.
 
                 </p>
 
             </div>
 
-            <div class="workflow-arrow">
-
-                →
-
-            </div>
+            <div class="workflow-line"></div>
 
             <div class="workflow-card">
 
@@ -500,16 +216,13 @@ alt="Preventivo AI">
 
                 <h3>
 
-                    Preventivo pronto
+                    Invia
 
                 </h3>
 
                 <p>
 
-                    Modifica,
-                    invia
-                    oppure salva
-                    il preventivo.
+                    Condividilo con il cliente.
 
                 </p>
 
@@ -520,233 +233,615 @@ alt="Preventivo AI">
     </div>
 
 </section>
-<div class="container">
 
-<h2>
+<!-- SCREENSHOTS -->
+    <section id="screens" class="screenshots">
 
-Tutto quello che ti serve.
+    <div class="container">
 
-</h2>
+        <div class="section-header">
 
-<p class="subtitle">
+            <span class="section-badge">
 
-Una piattaforma unica per gestire il tuo lavoro.
+                L'APP
 
-</p>
+            </span>
 
-<div class="cards">
+            <h2>
 
-<div class="card">
+                Tutto il tuo lavoro.
+                Sempre con te.
 
-<div class="emoji">🤖</div>
+            </h2>
 
-<h3>Assistente AI</h3>
+            <p>
 
-<p>
+                Un'unica applicazione per organizzare clienti, preventivi e appuntamenti.
 
-Parla con MastroAI
-come se fosse un collaboratore.
+            </p>
 
-</p>
+        </div>
 
-</div>
+        <div class="phones">
 
-<div class="card">
+            <div class="phone-card">
 
-<div class="emoji">
+                <img
+                    src="assets/images/home.png"
+                    alt="Dashboard MastroAI">
 
-📄
+                <h3>
 
-</div>
+                    Dashboard
 
-<h3>
+                </h3>
 
-Preventivi AI
+                <p>
 
-</h3>
+                    Tutto il lavoro sotto controllo.
 
-<p>
+                </p>
 
-Scatta una foto
-e genera il preventivo.
+            </div>
 
-</p>
+            <div class="phone-card featured">
 
-</div>
+                <img
+                    src="assets/images/chat.png"
+                    alt="AI Assistant">
 
-<div class="card">
+                <h3>
 
-<div class="emoji">
+                    AI Assistant
 
-📅
+                </h3>
 
-</div>
+                <p>
 
-<h3>
+                    Chiedi qualsiasi cosa.
 
-Agenda
+                </p>
 
-</h3>
+            </div>
 
-<p>
+            <div class="phone-card">
 
-Gestisci appuntamenti
-e clienti.
+                <img
+                    src="assets/images/estimate.png"
+                    alt="Preventivi AI">
 
-</p>
+                <h3>
 
-</div>
+                    Preventivi AI
 
-<div class="card">
+                </h3>
 
-<div class="emoji">
+                <p>
 
-👥
+                    Da una foto al preventivo.
 
-</div>
+                </p>
 
-<h3>
+            </div>
 
-Clienti
+        </div>
 
-</h3>
-
-<p>
-
-Rubrica intelligente
-con storico lavori.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="ai">
+<!-- FEATURES -->
 
-<div class="container two-columns">
+<section id="features" class="features">
 
-<div>
+    <div class="container">
 
-<img
-src="assets/images/chat.png"
-alt="AI Assistant">
+        <div class="section-header">
 
-</div>
+            <span class="section-badge">
 
-<div>
+                FUNZIONALITÀ
 
-<h2>
+            </span>
 
-Il tuo assistente AI.
+            <h2>
 
-</h2>
+                Tutto quello che ti serve.
 
-<p>
+            </h2>
 
-Non è solo una chat.
+            <p>
 
-Può aiutarti a:
+                MastroAI semplifica il lavoro quotidiano.
 
-</p>
+            </p>
 
-<ul class="checklist">
+        </div>
 
-<li>✔ creare appuntamenti</li>
+        <div class="feature-grid">
 
-<li>✔ generare preventivi</li>
+            <div class="feature-card">
 
-<li>✔ ricordare i clienti</li>
+                <div class="icon">
 
-<li>✔ organizzare la giornata</li>
+                    🤖
 
-<li>✔ lavorare più velocemente</li>
+                </div>
 
-</ul>
+                <h3>
 
-</div>
+                    AI Assistant
 
-</div>
+                </h3>
+
+                <p>
+
+                    Ricevi aiuto immediato in ogni attività.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">
+
+                    📷
+
+                </div>
+
+                <h3>
+
+                    Preventivi AI
+
+                </h3>
+
+                <p>
+
+                    Trasforma una foto in un preventivo.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">
+
+                    📅
+
+                </div>
+
+                <h3>
+
+                    Agenda
+
+                </h3>
+
+                <p>
+
+                    Organizza appuntamenti e scadenze.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">
+
+                    👥
+
+                </div>
+
+                <h3>
+
+                    Clienti
+
+                </h3>
+
+                <p>
+
+                    Gestisci tutta la tua rubrica.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">
+
+                    📄
+
+                </div>
+
+                <h3>
+
+                    Documenti
+
+                </h3>
+
+                <p>
+
+                    Tutti i tuoi lavori sempre disponibili.
+
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">
+
+                    ☁️
+
+                </div>
+
+                <h3>
+
+                    Cloud Sync
+
+                </h3>
+
+                <p>
+
+                    I tuoi dati sincronizzati ovunque.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="cta">
+<!-- AI SECTION -->
 
-<div class="container">
+<section id="ai" class="ai-section">
 
-<h2>
+    <div class="container ai-grid">
 
-Lavora meno.
-Produci di più.
+        <div class="ai-image">
 
-</h2>
+            <img
+                src="assets/images/chat.png"
+                alt="AI Assistant">
 
-<p>
+        </div>
 
-Lascia che MastroAI
-si occupi
-dell'organizzazione.
+        <div class="ai-content">
 
-Tu concentrati sul tuo lavoro.
+            <span class="section-badge">
 
-</p>
+                AI ASSISTANT
 
-<a href="#" class="primary big">
+            </span>
 
-Scarica gratuitamente
+            <h2>
 
-</a>
+                Il tuo collaboratore intelligente.
 
-</div>
+            </h2>
+
+            <p>
+
+                Chiedi. Organizza. Lavora.
+
+            </p>
+
+            <ul class="check-list">
+
+                <li>✔ Preventivi</li>
+
+                <li>✔ Agenda</li>
+
+                <li>✔ Clienti</li>
+
+                <li>✔ Promemoria</li>
+
+                <li>✔ Supporto continuo</li>
+
+            </ul>
+
+        </div>
+
+    </div>
 
 </section>
 
-<footer>
+<!-- BENEFITS -->
 
-<div class="container footer-grid">
+<section class="benefits">
 
-<div>
+    <div class="container">
 
-<h3>MastroAI</h3>
+        <div class="section-header">
 
-<p>
+            <span class="section-badge">
 
-L'assistente AI per
-artigiani e professionisti.
+                PERCHÉ MASTROAI
 
-</p>
+            </span>
 
-</div>
+            <h2>
 
-<div>
+                Più tempo.
+                Meno lavoro ripetitivo.
 
-<h4>Prodotto</h4>
+            </h2>
 
-<a href="#">Home</a>
+        </div>
 
-<a href="#">Funzionalità</a>
+        <div class="stats">
 
-<a href="#">Download</a>
+            <div class="stat">
 
-</div>
+                <h3>⚡</h3>
 
-<div>
+                <h4>Più veloce</h4>
 
-<h4>Supporto</h4>
+                <p>Riduci il tempo dedicato ai preventivi.</p>
 
-<a href="support.html">Supporto</a>
+            </div>
 
-<a href="privacy.html">Privacy</a>
+            <div class="stat">
 
-<a href="terms.html">Termini</a>
+                <h3>🎯</h3>
 
-</div>
+                <h4>Più preciso</h4>
 
-</div>
+                <p>Organizza il lavoro senza dimenticare nulla.</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h3>💼</h3>
+
+                <h4>Più professionale</h4>
+
+                <p>Presentati al meglio con i tuoi clienti.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FAQ -->
+   <section id="faq" class="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+                FAQ
+
+            </span>
+
+            <h2>
+
+                Domande frequenti
+
+            </h2>
+
+            <p>
+
+                Tutto quello che devi sapere su MastroAI.
+
+            </p>
+
+        </div>
+
+        <div class="faq-list">
+
+            <details class="faq-item">
+
+                <summary>
+
+                    Come funziona il preventivo AI?
+
+                </summary>
+
+                <p>
+
+                    Scatta una foto oppure descrivi il lavoro.
+                    L'intelligenza artificiale genera una bozza di preventivo che puoi modificare prima di inviarla.
+
+                </p>
+
+            </details>
+
+            <details class="faq-item">
+
+                <summary>
+
+                    Posso gestire i miei clienti?
+
+                </summary>
+
+                <p>
+
+                    Sì. Puoi organizzare clienti, lavori, appuntamenti e storico delle attività.
+
+                </p>
+
+            </details>
+
+            <details class="faq-item">
+
+                <summary>
+
+                    Serve esperienza con l'AI?
+
+                </summary>
+
+                <p>
+
+                    No. MastroAI è pensata per essere semplice e intuitiva fin dal primo utilizzo.
+
+                </p>
+
+            </details>
+
+            <details class="faq-item">
+
+                <summary>
+
+                    È disponibile su iPhone?
+
+                </summary>
+
+                <p>
+
+                    Sì, MastroAI è disponibile su App Store.
+
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DOWNLOAD -->
+
+<section class="download">
+
+    <div class="container download-box">
+
+        <span class="section-badge">
+
+            INIZIA OGGI
+
+        </span>
+
+        <h2>
+
+            Risparmia tempo.
+            Lavora meglio.
+
+        </h2>
+
+        <p>
+
+            Porta tutta la tua attività in un'unica applicazione.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn btn-primary">
+
+                Scarica su App Store
+
+            </a>
+
+            <a href="#features" class="btn btn-outline">
+
+                Scopri le funzionalità
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3 class="footer-logo">
+
+                Mastro<span>AI</span>
+
+            </h3>
+
+            <p>
+
+                L'assistente AI per artigiani e professionisti.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Prodotto
+
+            </h4>
+
+            <ul>
+
+                <li><a href="#workflow">Come funziona</a></li>
+                <li><a href="#features">Funzionalità</a></li>
+                <li><a href="#screens">L'App</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Supporto
+
+            </h4>
+
+            <ul>
+
+                <li><a href="support.html">Supporto</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Termini</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Seguici
+
+            </h4>
+
+            <p>
+
+                Novità, aggiornamenti e nuove funzionalità in arrivo.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            © 2026 MastroAI. Tutti i diritti riservati.
+
+        </div>
+
+    </div>
 
 </footer>
 
@@ -754,4 +849,4 @@ artigiani e professionisti.
 
 </body>
 
-</html>
+</html> 
