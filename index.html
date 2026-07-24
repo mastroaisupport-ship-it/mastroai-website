@@ -11,7 +11,126 @@
         content="Trasforma foto e richieste in preventivi, appuntamenti e clienti organizzati con MastroAI.">
 
     <link rel="stylesheet" href="assets/css/style.css">
+/* =====================================================
+WORKFLOW
+=====================================================*/
 
+.workflow{
+
+padding:140px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:80px;
+
+}
+
+.section-label{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:999px;
+
+background:rgba(245,166,35,.12);
+
+color:#F5A623;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.workflow-grid{
+
+display:grid;
+
+grid-template-columns:1fr auto 1fr auto 1fr;
+
+gap:25px;
+
+align-items:center;
+
+}
+
+.workflow-card{
+
+background:var(--surface);
+
+border:1px solid rgba(255,255,255,.05);
+
+padding:45px;
+
+border-radius:26px;
+
+transition:.35s;
+
+}
+
+.workflow-card:hover{
+
+transform:translateY(-12px);
+
+background:var(--surface2);
+
+}
+
+.workflow-arrow{
+
+font-size:52px;
+
+font-weight:700;
+
+color:#F5A623;
+
+}
+
+.step{
+
+width:70px;
+
+height:70px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:#F5A623;
+
+color:#081120;
+
+font-size:30px;
+
+font-weight:800;
+
+margin-bottom:30px;
+
+}
+    @media(max-width:1100px){
+
+.workflow-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.workflow-arrow{
+
+display:none;
+
+}
+
+}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -122,7 +241,126 @@ alt="Preventivo AI">
 </section>
 
 <section id="features">
+<section class="workflow">
 
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+
+                COME FUNZIONA
+
+            </span>
+
+            <h2>
+
+                Da una semplice foto
+                ad un preventivo completo.
+
+            </h2>
+
+            <p>
+
+                Nessun software complicato.
+                Bastano pochi secondi.
+
+            </p>
+
+        </div>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-card">
+
+                <div class="step">
+
+                    1
+
+                </div>
+
+                <h3>
+
+                    Scatta una foto
+
+                </h3>
+
+                <p>
+
+                    Fotografa il lavoro da eseguire
+                    oppure descrivilo con la voce.
+
+                </p>
+
+            </div>
+
+            <div class="workflow-arrow">
+
+                →
+
+            </div>
+
+            <div class="workflow-card">
+
+                <div class="step">
+
+                    2
+
+                </div>
+
+                <h3>
+
+                    L'AI analizza
+
+                </h3>
+
+                <p>
+
+                    Materiali,
+                    manodopera
+                    e lavorazioni
+                    vengono riconosciuti automaticamente.
+
+                </p>
+
+            </div>
+
+            <div class="workflow-arrow">
+
+                →
+
+            </div>
+
+            <div class="workflow-card">
+
+                <div class="step">
+
+                    3
+
+                </div>
+
+                <h3>
+
+                    Preventivo pronto
+
+                </h3>
+
+                <p>
+
+                    Modifica,
+                    invia
+                    oppure salva
+                    il preventivo.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <div class="container">
 
 <h2>
