@@ -1,1 +1,380 @@
-assets/css/style.css
+/* ==========================================================
+   MastroAI Website
+   Design System v1.0
+   ========================================================== */
+
+/* --------------------
+   Google Font
+---------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* --------------------
+   Root
+---------------------*/
+
+:root{
+
+    --background:#081120;
+    --surface:#111C2F;
+    --surface-hover:#17243B;
+
+    --primary:#F5A623;
+    --primary-hover:#FFB547;
+
+    --text:#FFFFFF;
+    --text-secondary:#A6B3C8;
+
+    --border:#26354D;
+
+    --radius:18px;
+
+    --shadow:
+        0 20px 40px rgba(0,0,0,.35);
+
+    --transition:.28s ease;
+
+    --container:1200px;
+
+}
+
+/* --------------------
+   Reset
+---------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:min(var(--container),92%);
+    margin:auto;
+
+}
+
+/* --------------------
+   Typography
+---------------------*/
+
+h1{
+
+    font-size:68px;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:44px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+p{
+
+    color:var(--text-secondary);
+
+}
+
+/* --------------------
+   Buttons
+---------------------*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 30px;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+    border:1px solid var(--border);
+
+    color:white;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--surface);
+
+}
+
+/* --------------------
+   Navbar
+---------------------*/
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(16px);
+
+    background:rgba(8,17,32,.72);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+nav{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:36px;
+
+}
+
+.menu a{
+
+    color:var(--text-secondary);
+
+    transition:.2s;
+
+}
+
+.menu a:hover{
+
+    color:white;
+
+}
+
+/* --------------------
+   Hero
+---------------------*/
+
+.hero{
+
+    min-height:88vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.hero p{
+
+    margin:30px 0;
+
+    font-size:20px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:30px;
+
+}
+
+/* --------------------
+   Cards
+---------------------*/
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:35px;
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--surface-hover);
+
+}
+
+/* --------------------
+   Sections
+---------------------*/
+
+section{
+
+    padding:120px 0;
+
+}
+
+/* --------------------
+   Footer
+---------------------*/
+
+footer{
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    padding:60px 0;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+}
+
+/* --------------------
+   Responsive
+---------------------*/
+
+@media(max-width:900px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+h1{
+
+font-size:46px;
+
+}
+
+h2{
+
+font-size:34px;
+
+}
+
+.hero{
+
+padding-top:60px;
+
+}
+
+}
