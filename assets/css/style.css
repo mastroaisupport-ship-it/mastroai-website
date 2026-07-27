@@ -104,9 +104,10 @@ h1, h2, h3 { letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
   display: grid;
   place-items: center;
   border-radius: 14px;
-  padding: 8px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 12px 28px rgba(255, 138, 31, 0.24);
+  padding: 7px;
+  background: linear-gradient(145deg, #071233 0%, #10214f 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 .brand-mark img {
   width: 100%;
@@ -284,10 +285,10 @@ h1, h2, h3 { letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
   top: 34px;
   width: 104px;
   height: 104px;
-  padding: 16px;
+  padding: 15px;
   border-radius: 28px;
   background: linear-gradient(160deg, rgba(4, 5, 11, 0.96), rgba(12, 15, 28, 0.92));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: var(--shadow);
   z-index: 4;
   transition: transform 0.35s ease;
