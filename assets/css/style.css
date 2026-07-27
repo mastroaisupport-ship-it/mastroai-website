@@ -980,3 +980,59 @@ transform:translateY(0);
 
 }
 
+/*==========================================================
+GRID BACKGROUND
+==========================================================*/
+
+.hero-grid-overlay{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+
+linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+
+background-size:60px 60px;
+
+mask-image:radial-gradient(circle at center, black 35%, transparent 95%);
+
+opacity:.5;
+
+pointer-events:none;
+
+}
+.mouse-glow{
+
+position:fixed;
+
+width:380px;
+
+height:380px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,
+
+rgba(255,123,0,.22),
+
+transparent 70%);
+
+pointer-events:none;
+
+filter:blur(40px);
+
+transform:translate(-50%,-50%);
+
+z-index:0;
+
+transition:
+
+left .08s linear,
+
+top .08s linear;
+
+}
