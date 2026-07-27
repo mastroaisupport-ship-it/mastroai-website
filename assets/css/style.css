@@ -954,4 +954,29 @@ padding:18px;
 
 }
 
+/* ==========================================
+SECTION ANIMATIONS
+========================================== */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:
+
+opacity .9s ease,
+
+transform .9s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
