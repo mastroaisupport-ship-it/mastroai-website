@@ -5,7 +5,8 @@ const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 const revealEls = document.querySelectorAll('.reveal');
 const glow = document.querySelector('.cursor-glow');
 const heroMedia = document.querySelector('.hero-media');
-const heroCards = document.querySelectorAll('.hero-card');
+const heroVisual = document.querySelector('.hero-visual');
+const heroFloaters = document.querySelectorAll('.hero-floating');
 const faqItems = document.querySelectorAll('.faq-item');
 
 const setHeaderState = () => {
@@ -59,15 +60,17 @@ faqItems.forEach((item) => {
   });
 });
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isFinePointer = window.matchMedia('(pointer: fine)').matches;
-if (isFinePointer && glow) {
+
+if (isFinePointer && glow && !prefersReducedMotion) {
   window.addEventListener('mousemove', (event) => {
     glow.style.left = `${event.clientX}px`;
     glow.style.top = `${event.clientY}px`;
   }, { passive: true });
 }
 
-if (heroMedia && isFinePointer) {
+if (heroMedia && isFinePointer && !prefersReducedMotion) {
   heroMedia.addEventListener('pointermove', (event) => {
     const rect = heroMedia.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
@@ -80,15 +83,23 @@ if (heroMedia && isFinePointer) {
   });
 }
 
-const updateHeroCards = () => {
-  const offset = Math.max(-24, Math.min(24, window.scrollY * 0.04));
-  heroCards.forEach((card, index) => {
-    card.style.transform = `translateY(${index === 0 ? -offset : offset}px)`;
+const updateHeroMotion = () => {
+  if (prefersReducedMotion) {
+    if (heroVisual) heroVisual.style.transform = '';
+    heroFloaters.forEach((card) => { card.style.transform = ''; });
+    return;
+  }
+  const offset = Math.max(-18, Math.min(18, window.scrollY * 0.03));
+  if (heroVisual) {
+    heroVisual.style.transform = `translate3d(0, ${offset}px, 0)`;
+  }
+  heroFloaters.forEach((card, index) => {
+    card.style.transform = `translate3d(0, ${index === 0 ? -offset / 2 : offset / 2}px, 0)`;
   });
 };
 
-window.addEventListener('scroll', updateHeroCards, { passive: true });
-updateHeroCards();
+window.addEventListener('scroll', updateHeroMotion, { passive: true });
+updateHeroMotion();
 
 window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
