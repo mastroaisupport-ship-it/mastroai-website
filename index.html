@@ -40,12 +40,6 @@
 <body>
   <a class="skip-link" href="#main-content">Vai al contenuto</a>
   <div class="page-shell">
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
-    <div class="ambient ambient-three" aria-hidden="true"></div>
-    <div class="grain" aria-hidden="true"></div>
-    <div class="cursor-glow" aria-hidden="true"></div>
-
     <header class="header" id="top">
       <div class="container nav-wrap">
         <a class="brand" href="#top" aria-label="MastroAI homepage">
@@ -55,362 +49,101 @@
           <span class="brand-text">Mastro<span>AI</span></span>
         </a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-          <span></span><span></span><span></span>
-        </button>
-
         <nav class="nav" id="primary-nav" aria-label="Navigazione principale">
-          <a href="#workflow">Workflow</a>
-          <a href="#features">Features</a>
-          <a href="#assistant">AI</a>
-          <a href="#faq">FAQ</a>
-          <a href="#download" class="nav-cta">Scarica l’app</a>
+          <a href="#app">App</a>
+          <a href="#experience">Experience</a>
+          <a href="#download" class="nav-cta">Download</a>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="hero section-pad hero-premium">
-        <div class="container hero-premium-grid">
-          <div class="hero-content reveal">
-            <div class="hero-eyebrow">MastroAI</div>
-            <div class="hero-headline">
-              <h1>Preventivi che sembrano opera d’arte.</h1>
-              <p class="lead">Da foto a stima finita in un istante, con eleganza e precisione. Risparmia tempo, conquista fiducia.</p>
-            </div>
+      <section class="hero section-pad" id="app">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Official app • MastroAI</p>
+            <h1>Premium work, from the first photo to the final quote.</h1>
+            <p class="lead">MastroAI brings quotes, clients and appointments into one calm mobile experience made for professionals who want to look sharp and move fast.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#download">Scarica l’app</a>
-              <a class="btn btn-secondary" href="#features">Scopri le feature</a>
+              <a class="btn btn-primary" href="#download">Download the app</a>
+              <a class="btn btn-secondary" href="#experience">See the experience</a>
             </div>
-            <div class="hero-trust">
-              <div class="trust-pill">⚡ 70% più veloce</div>
-              <div class="trust-pill">🧠 AI contestuale</div>
-              <div class="trust-pill">📱 Mobile first</div>
-            </div>
+            <ul class="hero-highlights">
+              <li>Built for the field</li>
+              <li>From photo to estimate</li>
+              <li>Fast enough for real work</li>
+            </ul>
           </div>
 
-          <div class="hero-composition reveal" aria-hidden="true">
-            <div class="hero-stage">
-              <div class="hero-token">
-                <img src="assets/images/logo.svg" alt="MastroAI icon">
-              </div>
-
-              <div class="screen screen-1">
-                <img src="assets/images/home.PNG" alt="Dashboard screenshot">
-              </div>
-              <div class="screen screen-2">
-                <img src="assets/images/chat.PNG" alt="AI assistant screenshot">
-              </div>
-              <div class="screen screen-3">
-                <img src="assets/images/estimate.PNG" alt="Estimate screenshot">
-              </div>
-
-              <div class="stage-ambient"></div>
+          <div class="hero-visual reveal" aria-label="MastroAI app preview">
+            <div class="hero-frame">
+              <div class="hero-badge">MastroAI</div>
+              <img src="assets/images/home.PNG" alt="MastroAI mobile app home view">
+            </div>
+            <div class="hero-side-card">
+              <img src="assets/images/chat.PNG" alt="MastroAI AI assistant in the app">
+            </div>
+            <div class="hero-logo-pill">
+              <img src="assets/images/logo.svg" alt="MastroAI logo">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="trusted section-pad" aria-labelledby="trusted-title">
-        <div class="container trusted-shell reveal">
-          <div class="trusted-copy">
-            <p class="section-kicker">Trusted by</p>
-            <h2 id="trusted-title">Field teams who need estimates that feel polished.</h2>
-            <p>MastroAI is built for local professionals, studios and service teams that want a faster workflow and a premium client experience.</p>
-            <div class="trusted-stats">
-              <div class="stat-card stat-card-strong">
-                <strong>120K+</strong>
-                <span>completed estimates</span>
-              </div>
-              <div class="stat-card stat-card-strong">
-                <strong>4.9/5</strong>
-                <span>average satisfaction</span>
-              </div>
-            </div>
-          </div>
-          <div class="trusted-grid" role="list" aria-label="Settori e professionisti che usano MastroAI">
-            <article class="glass-card trusted-card" role="listitem">
-              <strong>Artigiani</strong>
-              <span>Preventivi rapidi, clienti più professionali.</span>
-            </article>
-            <article class="glass-card trusted-card" role="listitem">
-              <strong>Studi tecnici</strong>
-              <span>Flussi organizzati e comunicazione elegante.</span>
-            </article>
-            <article class="glass-card trusted-card" role="listitem">
-              <strong>Consulenti</strong>
-              <span>Una presentazione premium per ogni proposta.</span>
-            </article>
-            <article class="glass-card trusted-card" role="listitem">
-              <strong>Installatori</strong>
-              <span>Appunti, sopralluoghi e preventivi in un unico posto.</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="workflow" class="workflow section-pad">
+      <section id="experience" class="section-pad product-section">
         <div class="container reveal">
-          <div class="workflow-shell">
-            <div class="glass-card workflow-intro">
-              <p class="section-kicker">Workflow</p>
-              <h2>Dal sopralluogo al preventivo senza attriti.</h2>
-              <p>Ogni fase è progettata per essere più veloce del lavoro manuale e più elegante della tradizione.</p>
-              <div class="workflow-pill-row">
-                <span class="workflow-pill">Scatto veloce</span>
-                <span class="workflow-pill">AI contestuale</span>
-                <span class="workflow-pill">Consegna in un click</span>
-              </div>
+          <div class="section-heading">
+            <p class="section-kicker">See the app</p>
+            <h2>One app. One flow. A cleaner way to work.</h2>
+          </div>
+          <div class="showcase-shell">
+            <div class="showcase-card showcase-card-large">
+              <img src="assets/images/estimate.PNG" alt="MastroAI estimate screen">
             </div>
-            <div class="workflow-steps">
-              <article class="glass-card workflow-card workflow-card-large">
-                <div class="workflow-card-head">
-                  <div class="step-index">01</div>
-                  <h3>Scatta o carica</h3>
-                </div>
-                <div class="workflow-card-visual">
-                  <img src="assets/images/home.PNG" alt="Foto e richieste trasformate in input" loading="lazy">
-                </div>
-                <p>Trasforma una foto, una nota o un messaggio in una richiesta pronta da organizzare.</p>
+            <div class="showcase-card">
+              <img src="assets/images/home.PNG" alt="MastroAI dashboard screen">
+            </div>
+            <div class="showcase-card">
+              <img src="assets/images/chat.PNG" alt="MastroAI assistant screen">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad product-section">
+        <div class="container reveal">
+          <div class="split-shell">
+            <div class="split-copy">
+              <p class="section-kicker">Why it feels premium</p>
+              <h2>Less friction. More confidence.</h2>
+              <p>From the first capture to the final handoff, MastroAI keeps the experience simple, polished, and focused on the work.</p>
+              <a class="btn btn-primary" href="#download">Get MastroAI</a>
+            </div>
+            <div class="feature-list">
+              <article class="feature-item">
+                <h3>Capture in seconds</h3>
+                <p>Start from a photo, a note, or a quick voice idea.</p>
               </article>
-              <article class="glass-card workflow-card">
-                <div class="step-index">02</div>
-                <h3>Lascia lavorare l’AI</h3>
-                <p>Il sistema riconosce il contesto, propone voci e prepara una base pronta da rifinire.</p>
+              <article class="feature-item">
+                <h3>Turn it into a quote</h3>
+                <p>Shape a professional estimate with less back-and-forth.</p>
               </article>
-              <article class="glass-card workflow-card">
-                <div class="step-index">03</div>
-                <h3>Invia e organizza</h3>
-                <p>Condividi il preventivo, richiami il cliente e tieni tutto in un flusso unico.</p>
+              <article class="feature-item">
+                <h3>Keep clients close</h3>
+                <p>Stay organized from request to appointment to follow-up.</p>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="features" class="features section-pad">
+      <section id="download" class="section-pad">
         <div class="container reveal">
-          <div class="section-head">
+          <div class="cta-card">
             <div>
-              <p class="section-kicker">Features</p>
-              <h2>Una suite premium, non un semplice tool.</h2>
-            </div>
-            <p>Ogni dettaglio è pensato per dare sensazione di controllo, velocità e qualità visiva.</p>
-          </div>
-          <div class="bento-grid premium">
-            <article class="glass-card bento-card bento-large">
-              <div class="card-label">Preventivi AI</div>
-              <h3>Trasforma foto, note e richieste in stime professionali.</h3>
-              <p>Un flusso end-to-end che unisce velocità, chiarezza e una presentazione premium.</p>
-              <div class="bento-media bento-media-large">
-                <img src="assets/images/estimate.PNG" alt="Screenshot del preventivo AI" loading="lazy">
-              </div>
-            </article>
-            <article class="glass-card bento-card bento-medium">
-              <div class="card-label">Assistente Vocale</div>
-              <h3>Parla con l’AI e ricevi una stima pronta.</h3>
-              <p>Invia messaggi vocali, descrivi il lavoro e guarda MastroAI rispondere come un assistente esperto.</p>
-            </article>
-            <article class="glass-card bento-card bento-stat">
-              <div class="card-label">Performance</div>
-              <strong>120K+</strong>
-              <span>preventivi già generati</span>
-            </article>
-            <article class="glass-card bento-card bento-small">
-              <div class="card-label">Fatture</div>
-              <h3>Da preventivo a fattura in pochi tap.</h3>
-              <p>Documenti pronti per invio senza uscire dal flusso.</p>
-            </article>
-            <article class="glass-card bento-card bento-stat">
-              <div class="card-label">Clienti</div>
-              <strong>5K+</strong>
-              <span>rapporti gestiti senza caos</span>
-            </article>
-            <article class="glass-card bento-card bento-small">
-              <div class="card-label">Offline</div>
-              <h3>Lavora anche senza connessione.</h3>
-              <p>Salva note, foto e bozze di preventivo anche in cantiere.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="assistant" class="assistant section-pad">
-        <div class="container reveal">
-          <div class="assistant-shell">
-            <div class="glass-card assistant-copy">
-              <p class="section-kicker">AI Assistant</p>
-              <h2>Un assistente sempre presente, che aiuta a decidere più in fretta.</h2>
-              <p class="lead">Dalla prima richiesta al preventivo finale, il sistema suggerisce i prossimi passi, mette in evidenza priorità e riduce errori e ritardi.</p>
-              <ul class="check-list">
-                <li>Risposte rapide e contestuali</li>
-                <li>Supporto per le attività ripetitive</li>
-                <li>Flusso pronto per lavorare anche da mobile</li>
-              </ul>
-            </div>
-            <div class="glass-card assistant-visual">
-              <div class="assistant-stage">
-                <img src="assets/images/chat.PNG" alt="Assistente AI di MastroAI" loading="lazy">
-                <div class="assistant-bubble assistant-bubble-top">Ho preparato una base di stima con le voci più comuni.</div>
-                <div class="assistant-bubble assistant-bubble-bottom">Fatto. Il task è stato associato alla richiesta e all’appuntamento.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="trades section-pad" aria-labelledby="trades-title">
-        <div class="container reveal">
-          <div class="trade-shell">
-            <div class="glass-card trade-visual">
-              <p class="section-kicker">Built for every trade</p>
-              <h2 id="trades-title">Pensato per professionisti che vogliono sembrare più grandi di quanto siano.</h2>
-              <img src="assets/images/estimate.PNG" alt="Interfaccia di MastroAI per il lavoro sul campo" loading="lazy">
-              <p>Ogni settore ha bisogno di un flusso chiaro, di un servizio migliore e di una presentazione premium.</p>
-            </div>
-            <div class="trade-list">
-              <article class="glass-card trade-card">
-                <h3>Edilizia</h3>
-                <p>Preventivi più rapidi, sopralluoghi più ordinati e clienti più fiduciosi.</p>
-              </article>
-              <article class="glass-card trade-card">
-                <h3>Impianti</h3>
-                <p>Gestione dei casi, appuntamenti e follow-up senza perdere tempo.</p>
-              </article>
-              <article class="glass-card trade-card">
-                <h3>Restauro</h3>
-                <p>Materiali, tempistiche e dettagli organizzati in modo elegante e chiaro.</p>
-              </article>
-              <article class="glass-card trade-card">
-                <h3>Servizi professionali</h3>
-                <p>Un brand più forte, una comunicazione più curata e un processo più ordinato.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="screens" class="screens section-pad">
-        <div class="container reveal">
-          <div class="section-head">
-            <div>
-              <p class="section-kicker">Screenshots</p>
-              <h2>Viste reali dell’esperienza, costruita per essere elegante e chiara.</h2>
-            </div>
-            <p>Le immagini già presenti nel progetto diventano il cuore di una narrazione più premium.</p>
-          </div>
-          <div class="screenshot-grid">
-            <article class="glass-card screenshot-card">
-              <img src="assets/images/home.PNG" alt="Dashboard principale di MastroAI" loading="lazy">
-              <div class="screenshot-copy">
-                <h3>Dashboard</h3>
-                <p>Centro operativo con priorità, clienti e richieste.</p>
-              </div>
-            </article>
-            <article class="glass-card screenshot-card">
-              <img src="assets/images/chat.PNG" alt="Assistente AI di MastroAI" loading="lazy">
-              <div class="screenshot-copy">
-                <h3>AI Assistant</h3>
-                <p>Un supporto conversazionale per ogni richiesta.</p>
-              </div>
-            </article>
-            <article class="glass-card screenshot-card">
-              <img src="assets/images/estimate.PNG" alt="Preventivo di MastroAI" loading="lazy">
-              <div class="screenshot-copy">
-                <h3>Preventivo</h3>
-                <p>Una base pronta per essere condivisa e personalizzata.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="benefits section-pad">
-        <div class="container reveal">
-          <div class="benefit-shell">
-            <article class="glass-card benefit-card benefit-hero">
-              <p class="section-kicker">Benefits</p>
-              <h2>Più velocità, più ordine e più percezione di qualità.</h2>
-              <p>Il risultato è un servizio che appare più professionale, più curato e più facile da vivere.</p>
-              <div class="benefit-meter">
-                <span>+40%</span>
-                <strong>Produttività</strong>
-              </div>
-            </article>
-            <div class="benefit-stack">
-              <article class="glass-card benefit-card">
-                <h3>Più velocità</h3>
-                <p>Riduci il tempo di creazione e consegna dei preventivi.</p>
-              </article>
-              <article class="glass-card benefit-card">
-                <h3>Più ordine</h3>
-                <p>Tieni clienti, appuntamenti e richieste in un unico flusso.</p>
-              </article>
-              <article class="glass-card benefit-card">
-                <h3>Più premium</h3>
-                <p>Trasforma l’esperienza di lavoro in una proposta che genera fiducia.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials section-pad">
-        <div class="container reveal">
-          <div class="testimonial-shell">
-            <article class="glass-card testimonial-card testimonial-hero">
-              <p class="section-kicker">Testimonials</p>
-              <h2>Il feedback di chi usa MastroAI ogni giorno.</h2>
-              <p>“Finalmente un’app che sembra pensata per chi lavora davvero, non solo per fare bella figura.”</p>
-              <footer>— Impresa locale</footer>
-            </article>
-            <div class="testimonial-stack">
-              <blockquote class="glass-card testimonial-card">
-                <p>“Il flusso preventivi è immediato e l’interfaccia ha un livello visivo davvero alto.”</p>
-                <footer>— Studio tecnico</footer>
-              </blockquote>
-              <blockquote class="glass-card testimonial-card">
-                <p>“I clienti percepiscono subito professionalità, ordine e modernità.”</p>
-                <footer>— Consulente professionale</footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="faq section-pad">
-        <div class="container reveal">
-          <div class="faq-shell">
-            <div class="glass-card faq-intro">
-              <p class="section-kicker">FAQ</p>
-              <h2>Domande frequenti.</h2>
-              <p>Una base chiara, moderna e pensata per conversione e fiducia.</p>
-            </div>
-            <div class="faq-list">
-              <details class="glass-card faq-item" open>
-                <summary>Il sito mantiene gli asset esistenti?</summary>
-                <p>Sì. Le immagini già presenti sono state integrate nel nuovo layout per mantenere identità e continuità visiva.</p>
-              </details>
-              <details class="glass-card faq-item">
-                <summary>Il design è pensato per mobile?</summary>
-                <p>Sì. Tutte le sezioni si adattano in modo fluido su mobile, tablet e desktop senza perdere qualità.</p>
-              </details>
-              <details class="glass-card faq-item">
-                <summary>Il sito è ottimizzato per SEO e accessibilità?</summary>
-                <p>Sì. Il markup è semantico, la navigazione è chiara e il contenuto è strutturato per essere più leggibile e più performante.</p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="download" class="download section-pad">
-        <div class="container reveal">
-          <div class="cta-card glass-card">
-            <div>
-              <p class="section-kicker">Download App</p>
-              <h2>Pronto a portare il tuo lavoro in una nuova dimensione?</h2>
-              <p>Scarica l’app e fai entrare assistenza AI, preventivi e clienti in un’unica esperienza premium.</p>
+              <p class="section-kicker">Download now</p>
+              <h2>Bring the app into your daily workflow.</h2>
+              <p>Install MastroAI and turn your next job into a better experience from the first touchpoint.</p>
             </div>
             <div class="hero-actions" aria-label="Download links">
               <a class="btn btn-primary" href="https://apps.apple.com" target="_blank" rel="noreferrer" aria-label="Download MastroAI on the App Store">Download on the App Store</a>
@@ -423,31 +156,11 @@
 
     <footer class="footer">
       <div class="container reveal">
-        <div class="footer-shell">
-          <div class="glass-card footer-card footer-brand-card">
-            <a class="brand footer-brand" href="#top">
-              <span class="brand-mark" aria-hidden="true">
-                <img src="assets/images/logo.svg" alt="" width="40" height="40" decoding="async">
-              </span>
-              <span class="brand-text">Mastro<span>AI</span></span>
-            </a>
-            <p>AI premium per preventivi, clienti e appuntamenti.</p>
-          </div>
-          <div class="glass-card footer-card">
-            <div class="footer-links">
-              <a href="#workflow">Workflow</a>
-              <a href="#features">Features</a>
-              <a href="#screens">Screenshots</a>
-              <a href="#faq">FAQ</a>
-            </div>
-          </div>
-          <div class="glass-card footer-card">
-            <div class="footer-meta">
-              <a href="privacy.html">Privacy</a>
-              <a href="terms.html">Terms</a>
-              <a href="contact.html">Contact</a>
-            </div>
-          </div>
+        <div class="footer-links">
+          <a href="#app">App</a>
+          <a href="#experience">Experience</a>
+          <a href="#download">Download</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
     </footer>
