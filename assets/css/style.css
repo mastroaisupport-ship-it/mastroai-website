@@ -480,3 +480,26 @@ h1, h2, h3 { letter-spacing: -0.03em; margin: 0; text-wrap: balance; }
 .cta-card a{
     color:inherit;
 }
+.footer-bottom{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    font-size:.9rem;
+    opacity:.65;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    margin:0;
+}
+
+@media(max-width:768px){
+
+    .footer-bottom{
+        justify-content:center;
+        text-align:center;
+    }
+
+}
